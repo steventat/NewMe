@@ -14,6 +14,19 @@ function signOut() {
   });
 }
 
+function submitSlider1() {
+  var slider1 = document.getElementById("slider1");
+  var rating = slider1.value;
+  var type = "";
+  if(rating > 50) {
+    type = "romantic";
+  }
+  else {
+    type = "spontaneous";
+  }
+  console.log(type);
+}
+
 //Jquery
 $(document).ready(function(){
 });
