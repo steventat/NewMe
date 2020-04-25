@@ -22,6 +22,10 @@ nav {
   justify-content: space-between;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 nav ul {
   display: flex;
   height: 72px;
