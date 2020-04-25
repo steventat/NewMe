@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="scripts.js"></script>
+    <meta name="google-signin-client_id" content="380460962189-f0alufltm1633tghsfcu441v76i811pj.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+
+  <body>
+    <header class="nav-container">
+      <div class="wrapper">
+        <nav>
+          <div class="logo">
+            New Me
+          </div>
+          <ul class="nav-items">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
+            <li><button onclick="signOut()">Sign Out</button></li>
+            <li><a href="#">Get Started</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="img-slider-container">
+        <img src="./assets/friends.png"/>
+      </div>
+      <section class="slider-text">
+        <h1>Our attempt to spice up your life!</h1>
+        <ol>
+          <li>Discover New Possibilities</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+        </ol>
+      </section>
+      <section id="Testimonials">
+        <h1>Testimonials</h1>
+        <div class="testimonial-pic-container">
+          <img src=""/>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
