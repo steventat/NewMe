@@ -2,53 +2,50 @@
 
 <html>
   <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1%22%3E"</script>
     <script src="scripts.js"></script>
     <meta name="google-signin-client_id" content="380460962189-f0alufltm1633tghsfcu441v76i811pj.apps.googleusercontent.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
 
   <body>
-    <header class="nav-container">
-      <div class="wrapper">
-        <nav>
-          <a href="./index.html"><div class="logo">
-            New Me
-          </div></a>
-          <ul class="nav-items">
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <!--Bug where Google sign-in occurs again if you return to this page before logging out-->
-            <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
-            <li><button id="signout" onclick="signOut()">Sign Out</button></li>
-            <li><a href="./questions.html">Get Started</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="img-slider-container">
-        <img src="./assets/friends.png"/>
-      </div>
-      <section class="slider-text">
-        <h1>Our attempt to spice up your life!</h1>
-        <ol>
-          <li>Discover New Possibilities</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-        </ol>
-      </section>
-      <section id="Testimonials">
-        <h1>Testimonials</h1>
-        <div class="testimonial-pic-container">
-          <img src=""/>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </section>
-    </main>
+    <div class="container-fluid">
+      <header class="nav-container">
+          <nav id="top-nav">
+            <a class="nav-link active" href="#main-section"><div class="logo">
+              New Me
+            </div></a>
+            <ul class="nav justify-content-center">
+              <li "nav-item"><a class="nav-link active" href="#">About</a></li>
+              <li "nav-item"><a class="nav-link active" href="#">Contact</a></li>
+              <li "nav-item"><a class="nav-link active" href="#">Get Started</a></li>
+            </ul>
+          </nav>
+      </header>
+      <main>
+        <section id="main-section">
+          <h1>New Me App</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <h2>Try out a demo!</h2>
+          <button class="btn btn-primary" type="submit">Button</button>
+          <df-messenger intent="WELCOME" chat-title="NewMe"
+            agent-id="1f907dd2-6afe-45f9-8b69-f71d90ff5e09"
+            language-code="en">
+          </df-messenger>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
